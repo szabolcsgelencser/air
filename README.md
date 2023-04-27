@@ -1,4 +1,4 @@
-# Air [![Go](https://github.com/cosmtrek/air/actions/workflows/release.yml/badge.svg)](https://github.com/cosmtrek/air/actions?query=workflow%3AGo+branch%3Amaster) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/dcb95264cc504cad9c2a3d8b0795a7f8)](https://www.codacy.com/gh/cosmtrek/air/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cosmtrek/air&amp;utm_campaign=Badge_Grade) [![Go Report Card](https://goreportcard.com/badge/github.com/cosmtrek/air)](https://goreportcard.com/report/github.com/cosmtrek/air) [![codecov](https://codecov.io/gh/cosmtrek/air/branch/master/graph/badge.svg)](https://codecov.io/gh/cosmtrek/air)
+# Air [![Go](https://github.com/szabolcsgelencser/air/actions/workflows/release.yml/badge.svg)](https://github.com/szabolcsgelencser/air/actions?query=workflow%3AGo+branch%3Amaster) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/dcb95264cc504cad9c2a3d8b0795a7f8)](https://www.codacy.com/gh/cosmtrek/air/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cosmtrek/air&amp;utm_campaign=Badge_Grade) [![Go Report Card](https://goreportcard.com/badge/github.com/szabolcsgelencser/air)](https://goreportcard.com/report/github.com/szabolcsgelencser/air) [![codecov](https://codecov.io/gh/cosmtrek/air/branch/master/graph/badge.svg)](https://codecov.io/gh/cosmtrek/air)
 
 :cloud: Live reload for Go apps
 
@@ -52,14 +52,14 @@ curl -sSfL https://raw.githubusercontent.com/cosmtrek/air/master/install.sh | sh
 air -v
 ```
 
-P.S. Great thanks mattn's [PR](https://github.com/cosmtrek/air/pull/1) for supporting Windows platform.
+P.S. Great thanks mattn's [PR](https://github.com/szabolcsgelencser/air/pull/1) for supporting Windows platform.
 
 ### Via `go install`
 
 With go 1.16 or higher:
 
 ```bash
-go install github.com/cosmtrek/air@latest
+go install github.com/szabolcsgelencser/air@latest
 ```
 
 ### Docker
@@ -170,7 +170,7 @@ FROM golang:1.19-alpine
 
 WORKDIR /app
 
-RUN go install github.com/cosmtrek/air@latest
+RUN go install github.com/szabolcsgelencser/air@latest
 
 COPY go.mod go.sum ./
 RUN go mod download
@@ -206,7 +206,7 @@ export PATH=$PATH:$(go env GOPATH)/bin <---- Confirm this line in you profile!!!
 
 ### Error under wsl when ' is included in the bin
 
-Should use `\` to escape the `' in the bin. related issue: [#305](https://github.com/cosmtrek/air/issues/305)
+Should use `\` to escape the `' in the bin. related issue: [#305](https://github.com/szabolcsgelencser/air/issues/305)
 
 
 ## Development

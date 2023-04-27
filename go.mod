@@ -1,4 +1,4 @@
-module github.com/cosmtrek/air
+module github.com/szabolcsgelencser/air
 
 go 1.19
 

@@ -5,8 +5,8 @@ MAINTAINER Rick Yu <cosmtrek@gmail.com>
 ENV GOPATH /go
 ENV GO111MODULE on
 
-COPY . /go/src/github.com/cosmtrek/air
-WORKDIR /go/src/github.com/cosmtrek/air
+COPY . /go/src/github.com/szabolcsgelencser/air
+WORKDIR /go/src/github.com/szabolcsgelencser/air
 
 RUN --mount=type=cache,target=/go/pkg/mod go mod download
 
